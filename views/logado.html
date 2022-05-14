@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logado com sucesso</title>
+</head>
+<body onload="setTimeout('carregar_tempo()', 15000)">
+  <h2>Você está logado <%= login %>! seja bem vindo</h2>
+</body>
+
+<script>
+
+setTimeout(function doSomething() {
+  window.location.replace('index');
+}, 7000);
+
+
+</script>
+</html>
+
+<!--
+  const inactivityTime = function () {
+
+  let time;
+
+  // reset timer
+  window.onload = resetTimer;
+  document.onmousemove = resetTimer;
+  document.onkeydown = resetTimer;
+
+  function doSomething() {
+      // do something when user is inactive
+  }
+
+  function resetTimer() {
+      clearTimeout(time);
+      time = setTimeout(req.session.login, 1000)
+      console.log(time)
+  }
+
+};
+-->
